@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoJu- Administrator Profile</title>
+    <link rel="shortcut icon" href="./../images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <section class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li class="active">
+                <a href="dashboard.html">
+                    <!--icon-->
+                   <i class="material-symbols-outlined">apps</i>
+                   <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="index1.html">
+                    <!--icon-->
+                   <i class="material-symbols-outlined">brush</i>
+                   <span>Arts</span>
+                </a>
+            </li>
+            <li>
+                <a href="user.html">
+                    <!--icon-->
+                    <i class="material-symbols-outlined">person</i>
+                    <span>Users</span>
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                   <i class="material-symbols-outlined">settings</i>
+                   <span>Settings</span>
+                   
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#" id="logout">
+                    <!--icon-->
+                    <i class="material-symbols-outlined">exit_to_app</i>
+                   <span>Log out</span>
+                </a>
+            </li>
+            
+        </ul>
+    </section>
+
+    <section class="main-content">
+        <div class="header-wrapper">
+            <div class="header-title" style="display: flex; gap: 10px; height: 40px; align-items: center;">
+                <i class="material-symbols-outlined">person</i>
+                <h1>Admin Profile</h1>
+            </div>
+            <button class="save-btn" onclick="showAdd()"><i class="material-symbols-outlined">done</i>Save</button>
+                
+        </div>
+
+        <div class="card-container">
+            <div class="admin-container">
+                <div class="admin-img">
+                    <img src="goku.jpg" alt="goku">
+                    <button class="edit-pic"><i class="material-symbols-outlined">photo_camera</i></button>
+                    
+                </div>
+                <div class="admin-info">
+                    <h1>Mendoza, Josh A. & Salvador, Justin Jose</h1>
+                    <a href="#">joshmendoza143@gmail.com</a>
+                    <p><b>- Administrator</b></p>
+                    
+                </div>
+
+                
+                
+            </div>
+
+            <div class="admin-card">
+                <h3 class="main-title" style="text-align: center;">Account</h3>
+                <div class="admin-acc">
+                    <div class="info-1">
+                        <label for="#">Username</label>
+                        <input type="text" placeholder="Username">
+                        <label for="#">Email</label>
+                        <input type="email" placeholder="Email">
+                        <label for="#">Password</label>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="info-2">
+                        <label for="#">Last Name</label>
+                        <input type="text" placeholder="Last Name">
+                        <label for="#">First Name</label>
+                        <input type="text" placeholder="First Name">
+                        <label for="#">Middle Name</label>
+                        <input type="text" placeholder="Middle Name">
+                        <label for="#">Title</label>
+                        <input type="text">
+                    </div>
+                    
+                </div>
+            </div>
+           
+        </div>
+
+       
+    </section>
+
+
+    <div class="popup" id="popup">
+        <!--Logo-->
+        <img src="/images/headlogo.svg" alt="JOJU's Logo" width="140" height="50">
+        <p class="logmsg"><b>Are you sure you want to <span style="color: red;">log out</span>?</b></p>
+        <div class="btn-container">
+            <button class="btn" id="yes" onclick="LandingPage()">Yes</button>
+            <button class="btn" id="no">No</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+
+    
+    <script>
+        const logoutLink = document.getElementById('logout');
+        const popup = document.getElementById('popup');
+        const overlay = document.getElementById('overlay');
+        const yesBtn = document.getElementById('yes');
+        const noBtn = document.getElementById('no');
+
+        logoutLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            popup.style.display = 'block';
+            overlay.style.display = 'block';
+
+        });
+
+        yesBtn.addEventListener('click', function() {
+            alert('Logged out successfully!');
+            popup.style.display = 'none';
+            overlay.style.display = 'none'
+        });
+
+        noBtn.addEventListener('click', function() {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+
+
+        function showAdd() {
+            alert('Successfully Saved');
+        }
+
+        function LandingPage() {
+            window.location.href='./../index.html'
+        }
+    </script>
+    
+</body>
+</html>

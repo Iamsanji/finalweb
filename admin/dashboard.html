@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoJu- Dashboard</title>
+    <link rel="shortcut icon" href="./../images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+    <section class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li class="active">
+                <a href="#">
+                    <!--icon-->
+                   <i class="material-symbols-outlined">apps</i>
+                   <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="index1.html">
+                    <!--icon-->
+                   <i class="material-symbols-outlined">brush</i>
+                   <span>Arts</span>
+                </a>
+            </li>
+            <li>
+                <a href="user.html">
+                    <!--icon-->
+                    <i class="material-symbols-outlined">person</i>
+                   <span>Users</span>
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                   <i class="material-symbols-outlined">settings</i>
+                   <span>Settings</span>
+                   
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#" id="logout">
+                    <!--icon-->
+                    <i class="material-symbols-outlined">exit_to_app</i>
+                   <span>Log out</span>
+                </a>
+            </li>
+            
+        </ul>
+    </section>
+
+    <section class="main-content">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <i class="material-symbols-outlined">apps</i>
+            </div>
+            <div class="user-info">
+                <div class="search-box">
+                <i class="material-symbols-outlined">search</i>
+                <input type="text" placeholder="Search">
+                </div>
+                <a href="admin_profile.html"><img src="goku.jpg" alt="img"></a>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <h3 class="main-title">Data</h3>
+            <div class="card-wrapper">
+                <div class="payment-card ">
+                    <div class="card-header">
+                        <div class="amount">
+                            <span class="title">Payment amount</span>
+                            <span class="amount-value">$100.00</span>
+                        </div>
+                        <i class="material-symbols-outlined">attach_money</i>
+                    </div>
+                    
+                </div>
+
+                <div class="payment-card ">
+                    <div class="card-header">
+                        <div class="amount">
+                            <span class="title">Payment order</span>
+                            <span class="amount-value">$100.00</span>
+                        </div>
+                          <i class="material-symbols-outlined">attach_money</i>                       
+                    </div>
+                    
+                </div>
+
+                <div class="payment-card ">
+                    <div class="card-header">
+                        <div class="amount">
+                            <span class="title">Payment customer</span>
+                            <span class="amount-value">$100.00</span>
+                        </div>
+                        <i class="material-symbols-outlined">person</i>
+                    </div>
+                    
+                </div>
+
+                <div class="payment-card ">
+                    <div class="card-header">
+                        <div class="amount">
+                            <span class="title">Payment proceed</span>
+                            <span class="amount-value">$100.00</span>
+                        </div>
+                        <i class="material-symbols-outlined">attach_money</i>
+                    </div>
+                  
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="footer-wrapper">
+            <h3 class="main-title">Data</h3>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Art Type</th>
+                        <th>Date</th>
+                        <th>Transaction</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+
+                    <tbody>
+                        <tr>
+                            <td>Paint Art</td>
+                            <td>2024-01-02</td>
+                            <td>Cash on delivery</td>
+                            <td>$123.00</td>
+                            
+                            <td style="color: red;">Pending</td>
+                            <td><button>Edit</button></td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                Paint Art
+                            </td>
+                            <td>2024-01-03</td>
+                            <td>Cash on delivery</td>
+                            <td>$123.00</td>
+                            
+                            <td>Received</td>
+                            <td><button>Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Paint Art
+                            </td>
+                            <td>2024-01-04</td>
+                            <td>Cash on delivery</td>
+                            <td>$123.00</td>
+                            
+                            <td>Received</td>
+                            <td><button>Edit</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Paint Art
+                            </td>
+                            <td>2024-01-04</td>
+                            <td>Cash on delivery</td>
+                            <td>$123.00</td>
+                            
+                            <td style="color: red;">Pending</td>
+                            <td><button>Edit</button></td>
+
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="7">Total: $ 1234.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        
+    </section>
+    
+    <div class="edit-popup">
+
+    </div>
+
+    <div class="popup" id="popup">
+        <!--Logo-->
+        <img src="/images/headlogo.svg" alt="JOJU's Logo" width="140" height="50">
+        <p class="logmsg"><b>Are you sure you want to <span style="color: red;">log out</span>?</b></p>
+        <div class="btn-container">
+            <button class="btn" id="yes" onclick="LandingPage()">Yes</button>
+            <button class="btn" id="no">No</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+
+    <script>
+        const logoutLink = document.getElementById('logout');
+        const popup = document.getElementById('popup');
+        const overlay = document.getElementById('overlay');
+        const yesBtn = document.getElementById('yes');
+        const noBtn = document.getElementById('no');
+
+        logoutLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            popup.style.display = 'block';
+            overlay.style.display = 'block';
+
+        });
+
+        yesBtn.addEventListener('click', function() {
+            alert('Logged out successfully!');
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+
+        noBtn.addEventListener('click', function() {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+
+
+
+        function LandingPage() {
+            window.location.href='./../index.html'
+        }
+    </script>
+</body>
+</html>

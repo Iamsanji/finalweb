@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoJu - Arts</title>
+    <link rel="shortcut icon" href="./../images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <section class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li class="active">
+                <a href="dashboard.html">
+                    <!--icon-->
+                   <i class="material-symbols-outlined">apps</i>
+                   <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="index1.html">
+                    <!--icon-->
+                   <i class="material-symbols-outlined">brush</i>
+                   <span>Arts</span>
+                </a>
+            </li>
+            <li>
+                <a href="user.html">
+                    <!--icon-->
+                    <i class="material-symbols-outlined">person</i>
+                    <span>Users</span>
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                   <i class="material-symbols-outlined">settings</i>
+                   <span>Settings</span>
+                   
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#" id="logout">
+                    <!--icon-->
+                    <i class="material-symbols-outlined">exit_to_app</i>
+                   <span>Log out</span>
+                </a>
+            </li>
+            
+        </ul>
+    </section>
+
+    <section class="main-content">
+        <div class="header-wrapper">
+            <div class="header-title">
+                
+                <i class="material-symbols-outlined">brush</i>
+            </div>
+            <div class="user-info">
+                <div class="search-box">
+                <i class="material-symbols-outlined">search</i>
+                <input type="text" placeholder="Search">
+                </div>
+                <a href="admin_profile.html"><img src="goku.jpg" alt="img"></a>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card-wrapper">
+
+                <div class="img-card">
+                    <div class="img-header">
+                        <img class="art-img" src="/listsales/images/caricature/5.svg" alt="goku">
+                        <span class="title">Caricature</span>
+                        <span class="card-date">2024-01-01</span>
+                        <span class="img-value">$100.00</span>
+                    </div>
+                </div>
+
+                <div class="img-card">
+                    <div class="img-header">
+                        <img class="art-img" src="/listsales/images/acrylic/1.svg" alt="goku">
+                        <span class="title">Moonlight tree</span>
+                        <span class="card-date">2024-01-01</span>
+                        <span class="img-value">$100.00</span>
+                    </div>
+                </div>
+
+                <div class="img-card">
+                    <div class="img-header">
+                        <img class="art-img" src="/listsales/images/papercraft/1.svg" alt="goku">
+                        <span class="title">Cactus Papercraft</span>
+                        <span class="card-date">2024-01-01</span>
+                        <span class="img-value">$100.00</span>
+                    </div>
+                </div>
+
+                <div class="img-card">
+                    <div class="img-header">
+                        <img class="art-img" src="/listsales/images/carving/1.svg" alt="goku">
+                        <span class="title">Phoenix </span>
+                        <span class="card-date">2024-01-01</span>
+                        <span class="img-value">$100.00</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <div class="title-wrapper" style="margin-bottom: 1rem;">
+                <h3 class="art-title">Arts Data</h3>
+                <button class ="save-btn" id="open-pop"> <i class="material-symbols-outlined">add</i>Add</button>
+            </div>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Art Type</th>
+                        <th>Date</th>
+                        <th>Transaction</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                    </tr>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                Phoenix
+                            </td>
+                            <td>2024-01-02</td>
+                            <td>Cash on delivery</td>
+                            <td>$123.00</td>
+                            <td><button>Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Cactus Papercraft
+                            </td>
+                            <td>2024-01-02</td>
+                            <td>Cash on delivery</td>
+                            <td>$123.00</td>
+                            <td><button>Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Caricature
+                            </td>
+                            <td>2024-01-02</td>
+                            <td>Cash on delivery</td>
+                            <td>$123.00</td>
+                            <td><button>Edit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="popup" id="popup">
+        <!--Logo-->
+        <img src="/images/headlogo.svg" alt="JOJU's Logo" width="140" height="50">
+        <p class="logmsg"><b>Are you sure you want to <span style="color: red;">log out</span>?</b></p>
+        <div class="btn-container">
+            <button class="btn" id="yes" onclick="LandingPage()">Yes</button>
+            <button class="btn" id="no">No</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="add-pop">
+        <div class="addform" id="add-pop">
+        <h3>Add</h3>
+            <form action="">
+                <div class="bla">
+                    <div class="space ">
+
+                        <input type="text" placeholder="Art Type">
+                        <input type="text" placeholder="Amount">
+                        <label for="image" style="text-align: center;">Image</label>
+                        <button class="add-btn" style="margin: auto;"><i class="material-symbols-outlined">add_photo_alternate</i></button>
+                        <div class="title-wrapper">
+                            <button class="add-btn" id="yEs">Add</button>
+                            <button class="add-btn" id="nO">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="space1">
+                        <input type="number" placeholder="Quantity" >
+                        <label for="">Data Published</label>
+                        <input type="date">
+                        <textarea placeholder="Description"></textarea>
+                    </div>
+                </div>
+                
+                
+                
+            </form>
+    </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        const logoutLink = document.getElementById('logout');
+        const popup = document.getElementById('popup');
+        const overlay = document.getElementById('overlay');
+        const yesBtn = document.getElementById('yes');
+        const noBtn = document.getElementById('no');
+
+        logoutLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            popup.style.display = 'block';
+            overlay.style.display = 'block';
+
+        });
+
+        yesBtn.addEventListener('click', function() {
+            alert('Logged out successfully!');
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+
+        noBtn.addEventListener('click', function() {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+
+        
+    </script>
+</body>
+</html>
