@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoJu - ArtShop</title>
+
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo"> 
+            <a href="#" class="header-logo">
+                <img src="images/headlogo.svg" alt="JOJU's Logo" width="140" height="50">
+            </a>
+        </div>
+        <ul class="menu">
+            <div class="header-search-container">
+                <input type="search" name="search" class="search-field" placeholder="Enter Art type..."> 
+                <button class="search-btn">
+                   <ion-icon name="search-outline"></ion-icon>
+               </button>
+           </div> 
+           <li><a href="index.html">Home</a></li>
+           <li><a href="listsales\acrylic.html">Arts</a></li>
+            <li><a href="#details">Contacts</a></li>
+            <div class="account" >
+                <input type="checkbox">
+                <button id="present" class="show-btn">Login</button>
+            </div>
+           
+        </ul>
+    </header>
+  <section>
+    <div class="slider">
+       <div class="arrows1">
+        <button  id="prev"><</button>
+       </div>
+        <div class="list">
+            <div class="item active">
+                <img src="images/img1.png">
+                    <div class="content">
+                        <p>art 1</p>
+                        <h2>Drawing</h2>
+                        <p>
+                            Drawing in art includes characteristics such as line, shape, form, value, perspective, and composition. An art drawing may include materials such as paper, ink, graphite, and charcoal.
+                        </p>
+                    </div>
+            </div>
+            <div class="item">
+                <img src="images/img2.png">
+                    <div class="content">
+                        <p>art 2</p>
+                        <h2>Painting</h2>
+                        <p>
+                            the expression of ideas and emotions, with the creation of certain aesthetic qualities, in a two-dimensional visual language. The elements of this language—its shapes, lines, colours, tones, and textures—are used in various ways to produce sensations of volume, space, movement, and light on a flat surface.
+                        </p>
+                    </div>
+            </div>
+            <div class="item">
+                <img src="images/img3.png">
+                    <div class="content">
+                        <p>art 3</p>
+                        <h2>Handicrafts</h2>
+                        <p>
+                            sometimes more precisely expressed as artisanal handicraft or handmade, is any of a wide variety of types of work where useful and decorative objects are made completely by one's hand or by using only simple, non-automated related tools like scissors, carving implements, or hooks.
+                        </p>
+                    </div>
+            </div>
+            <div class="item">
+                <img src="images/collage.jpg">
+                    <div class="content">
+                        <p>art 4</p>
+                        <h2>Collage</h2>
+                        <p>
+                            an art form that is made up of overlapping pieces of material, such as photographs, fabric, coloured and textured paper and other types of mixed media. 
+                        </p>
+                    </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button  id="next">></button>
+        </div>
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="images/img1.png">
+                <div class="content">Drawing</div>
+            </div>
+            <div class="item">
+                <img src="images/img2.png">
+                <div class="content">Painting</div>
+            </div>
+            <div class="item">
+                <img src="images/img3.png">
+                <div class="content">Handicrafts</div>
+            </div>
+            <div class="item">
+                <img src="images/collage.jpg">
+                <div class="content">Collage</div>
+            </div>
+        </div>
+    </div>
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          
+          <div class="forms-wrap">
+            <form action=".\admin\dashboard.html" autocomplete="off" class="sign-in-form">
+              <div class="logo">
+                <img src="images/headlogo.svg" alt="JoJu-ArtShop" />
+                <h4>JoJu-ArtShop</h4>
+                <ion-icon class="close-btn" name="close-circle">x</ion-icon>
+              </div>
+  
+              <div class="heading">
+                <h2>Welcome Back</h2>
+                <h6>Not registred yet?</h6>
+                <a href="#" class="toggle">Sign up</a>
+              </div>
+  
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Username</label>
+                </div>
+  
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Password</label>
+                </div>
+  
+                <input type="submit" value="Sign In" class="sign-btn" />
+  
+                <p class="text">
+                  Forgotten your password or you login datails?
+                  <a href="#">Get help</a> signing in
+                </p>
+              </div>
+            </form>
+  
+            <form action="index.html" autocomplete="off" class="sign-up-form" >
+              <div class="logo">
+                <img src="images/headlogo.svg" alt="JoJu-ArtShop" />
+                <h4>JoJu-ArtShop</h4>
+                
+              </div>
+  
+              <div class="heading">
+                <h2>Get Started</h2>
+                <h6>Already have an account?</h6>
+                <a href="#" class="toggle">Sign in</a>
+              </div>
+  
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Name</label>
+                </div>
+  
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Email Address</label>
+                </div>
+  
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Password</label>
+                </div>
+  
+                <input type="submit" value="Sign Up" class="sign-btn" />
+  
+                <p class="text">
+                  By signing up, I agree to the
+                  <a href="#">Terms of Services</a> and
+                  <a href="#">Privacy Policy</a>
+                </p>
+              </div>
+            </form>
+          </div>
+  
+          <div class="carousel">
+     
+            <div class="images-wrapper">
+              <img src="./images/carousel1.svg" class="image img-1 show" alt="" />
+              <img src="./images/carousel2.svg" class="image img-2" alt="" />
+              <img src="./images/carousel3.svg" class="image img-3" alt="" />
+            </div>
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>Easy Choice for art</h2>
+                  <h2>Commision as you like</h2>
+                  <h2>Daily Updates</h2>
+                </div>
+              </div>
+    
+              <div class="bullets">
+                <span  class="active" data-value="1"></span>
+                <span  data-value="2"></span>
+                <span  data-value="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  </section>
+
+  <section class="sample">
+
+  <h1> Sample Arts</h1>
+
+  <div class="sbox-sample">
+
+    <div class="sbox">
+      <img src="images/acrylicpaintbanner.jpg" height="300px"  width="250px">
+      <a href="listsales/acrylic.html"><h3>Acrylic Paints</h3></a>
+      <p>Acrylics can be applied in thin layers or washes to create effects that resemble watercolors and other water-based mediums.</p>
+    </div>
+
+    <div class="sbox">
+      <img src="images/cartoonbanner.avif" height="300px"  width="250px">
+      <a href="listsales/cartoon.html"><h3>Cartoon Drawings</h3></a>
+      <p>Cartoon is a type of visual art that is typically drawn, frequently animated, in an unrealistic or semi-realistic style.</p>
+    </div>
+
+    <div class="sbox">
+      <img src="images/caricaturebanner.jpeg" height="300px"  width="250px">
+     <a href="listsales/caricature.html"> <h3>Caricature Drawings</h3></a>
+      <p>Drawing of a person or thing in which the features and form have been distorted and exaggerated in order to mock or satirise the subject.</p>
+    </div>
+
+    <div class="sbox">
+      <img src="images/crochetbanner.webp" height="300px"  width="250px">
+      <a href="listsales/crochet.html"><h3>Crochet</h3></a>
+      <p>Drawing of a person or thing in which the features and form have been distorted and exaggerated in order to mock or satirise the subject.</p>
+    </div>
+
+    <div class="sbox">
+      <img src="images/carvingbanner.webp" height="300px"  width="250px">
+      <a href="listsales/carving.html"><h3>Carving</h3></a>
+      <p>Carving is the act of using tools to shape something from a material by scraping away portions of that material. </p>
+    </div>
+
+    <div class="sbox">
+      <img src="images/papercraftbanner.jpg" height="300px"  width="250px">
+      <a href="listsales/papercraft.html"><h3>PaperCraft</h3></a>
+      <p>Any form of paper handicraft, where paper is the main medium, is called paper crafting.</p>
+    </div>
+
+    <div class="sbox">
+      <img src="images/mosaicbanner.jpg" height="300px"  width="250px">
+      <a href="listsales/mosaic.html"><h3>Mosaic</h3></a>
+      <p>pattern or image made of small regular or irregular pieces of colored stone, glass or ceramic, and covering a surface.</p>
+    </div>
+
+    <div class="sbox">
+      <img src="images/architecturalbanner.jpg" height="300px"  width="250px">
+      <a href="listsales/architectural.html"><h3>Architectural</h3></a>
+      <p>architecture are initial sketches or visual representations of an architect's ideas and design concepts for a building or structure</p>
+    </div>
+
+    
+
+  </div>
+
+  </section>
+
+  <section class="address" id="details">
+ 
+  <div class="title">
+    <h1>Commission now</h1>
+  </div>
+
+  <div class="cont_box">
+    <!--Form-->
+    <div class="cont cont_form">
+      <h3>Send a Message</h3>
+      <form action="">
+      <div class="form_box">
+       
+          <div class="row-50">
+            <div class="int-box">
+              <span>First Name</span>
+              <input type="text" placeholder="First Name" required>
+            </div>
+            <div class="int-box">
+              <span>Last Name</span>
+              <input type="text" placeholder="Last Name" required>
+            </div>
+          </div>
+
+          <div class="row-50">
+            <div class="int-box">
+              <span>Email</span>
+              <input type="email" placeholder="@email.com" required>
+            </div>
+            <div class="int-box">
+              <span>Mobile #</span>
+              <input type="tel" placeholder="mobile #" required>
+            </div>
+          </div>
+
+          <div class="row-100">
+            <div class="int-box">
+              <span>Message</span>
+              <textarea placeholder="Write your message here..."></textarea>
+            </div>
+          </div>
+
+          <div class="row-100">
+            <div class="int-box">
+              <input type="submit" value="send" class="sub">
+            </div>
+          </div>
+        
+        </div>
+
+      </form>
+    </div>
+
+    <!--Info-->
+    <div class="cont cont_info">
+      <h3>Contact Info</h3>
+      <div class="info_box">
+          <div>
+            <span><ion-icon name="location"></ion-icon></span>
+              <p>Western Mindanao State University (<b>WMSU</b>)</p>
+          </div>
+          <div>
+            <span><ion-icon name="mail"></ion-icon></span>
+              <a href="#@email.com">JoJuOfficial0426@gmail.com</a>
+          </div>
+          <div>
+            <span><ion-icon name="call"></ion-icon></span>
+              <a href="tel:1234 567 8901">+6391 234 5678</a>
+          </div>
+
+          <!--Social Media-->
+          <ul class="soc-med">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          </ul>
+      </div>
+    </div>
+
+    <!--Map-->
+    <div class="cont cont_map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8075482660292!2d122.05879767510048!3d6.913599518506966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x325041dd7a24816f%3A0x51af215fb64cc81a!2sWestern%20Mindanao%20State%20University!5e0!3m2!1sen!2sph!4v1711870357187!5m2!1sen!2sph" 
+       style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <h3> JoJu Official</h3>
+      <p>Being good in business is the most fascinating kind of art. Making money is art and working is art and good business is the best art.</p>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright&copy; 2024 JoJuArt_Official designed by <span>Josh & Justin</span></p>
+    </div>
+  </footer>
+
+
+<script src="app.js"></script>
+<!-- icon plug in -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
